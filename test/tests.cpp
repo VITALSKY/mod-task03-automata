@@ -17,17 +17,7 @@ TEST(task, test2)
 	EXPECT_EQ(OFF, result);
 }
 
-TEST(task, test3)
-{
-	Automata machine = Automata();
-	machine.on();
-	machine.coin(20);
-	machine.choice(1);
-	States result = machine.getState();
-	EXPECT_EQ(WAIT, result);
-}
-
-TEST(task, test4) 
+TEST(task, test3) 
 {
 	Automata machine = Automata();
 	machine.on();
